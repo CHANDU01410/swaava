@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-canvas: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-surface-subtle: #F5F4F0;
+    --color-primary: #D9532F;
+    --color-primary-hover: #C04321;
+    --color-primary-subtle: #FDF2ED;
+    --color-primary-dark: #8C2B10;
+    --color-accent-green: #2B6149;
+    --color-accent-green-bg: #EBF4EF;
+    --color-text-main: #1C1917;
+    --color-text-muted: #66615C;
+    --color-text-light: #948F89;
+    --color-border: #E8E5E0;
+    --color-border-subtle: #F0EFEB;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text-main);
+    font-family: 'Work Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  * {
+    border-color: var(--color-border);
+    box-sizing: border-box;
+  }
+}
+
+/* Custom fine-line scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F4F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D1CB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+/* Material Symbols alignment helper */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Mobile tap highlight reset */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}

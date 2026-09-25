@@ -1,0 +1,13 @@
+{
+  "name": "swaava",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:frontend": "npm --prefix frontend install && npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend install",
+    "start:backend": "npm --prefix backend start"
+  },
+  "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.17.13"
+  }
+}
